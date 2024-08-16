@@ -20,15 +20,15 @@ Dễ sử dụng: Laravel tự động xử lý việc tạo và xác thực tok
 Sử dụng @csrf là một phần quan trọng để bảo vệ các form trong ứng dụng Laravel của bạn khỏi các cuộc tấn công tiềm ẩn.
 
 <h2>Câu lệnh PHP Larevel</h2>
-Câu lệnh tạo serve:
-php artisan serve
+Câu lệnh tạo serve:<br>
+php artisan serve<br>
 
-Câu lệnh tinker:
-php artisan tinker 
-echo bcrypt('admin1234') 
+Câu lệnh tinker:<br>
+php artisan tinker <br>
+echo bcrypt('admin1234') <br>
 
-Câu lệnh migrate database:
-php artisan migrate
+Câu lệnh migrate database:<br>
+php artisan migrate<br>
 
-Câu lệnh xóa cache để chạy dự án khác:
-php artisan config:cache 
+Câu lệnh xóa cache để chạy dự án khác:<br>
+php artisan config:cache <br>
