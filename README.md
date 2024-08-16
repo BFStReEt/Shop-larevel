@@ -7,7 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<!--
 Câu lệnh tạo serve
 php artisan serve
 
@@ -19,4 +18,3 @@ php artisan migrate
 
 Câu lệnh xóa cache để chạy dự án khác
 php artisan config:cache 
--->
