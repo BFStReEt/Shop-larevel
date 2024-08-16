@@ -7,14 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-Câu lệnh tạo serve
+Câu lệnh tạo serve:
 php artisan serve
 
-Câu lệnh tinker
+Câu lệnh tinker:
 php artisan tinker
 
-Câu lệnh migrate database
+Câu lệnh migrate database:
 php artisan migrate
 
-Câu lệnh xóa cache để chạy dự án khác
+Câu lệnh xóa cache để chạy dự án khác:
 php artisan config:cache 
