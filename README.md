@@ -22,13 +22,17 @@ Sử dụng @csrf là một phần quan trọng để bảo vệ các form trong
 <h2>Câu lệnh PHP Larevel</h2>
 Câu lệnh tạo serve:<br>
 php artisan serve<br>
+<br>
 
 Câu lệnh tinker:<br>
 php artisan tinker <br>
 echo bcrypt('admin1234') <br>
+<br>
 
 Câu lệnh migrate database:<br>
 php artisan migrate<br>
+<br>
 
 Câu lệnh xóa cache để chạy dự án khác:<br>
 php artisan config:cache <br>
+<br>
