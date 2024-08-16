@@ -9,9 +9,8 @@ class LoginController extends Controller
 {
     public function index()
     {
-        echo "hello";
         return view("admin.users.login", [
-            'title' => 'Hello ban nho, lau roi minh chua gap',
+            'title' => 'Login',
         ]);
     }
 }
