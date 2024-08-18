@@ -2,6 +2,7 @@
 <html lang="en">
 <!--edit-->
 <head>
+    <!--reademe-->
     @include('admin.head')
 </head>
 
