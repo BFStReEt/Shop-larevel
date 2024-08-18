@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--edit-->
+
 <head>
-    <!--reademe-->
+    <!--reademe not edit-->
     @include('admin.head')
 </head>
 

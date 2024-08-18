@@ -20,7 +20,7 @@ Dễ sử dụng: Laravel tự động xử lý việc tạo và xác thực tok
 Sử dụng @csrf là một phần quan trọng để bảo vệ các form trong ứng dụng Laravel của bạn khỏi các cuộc tấn công tiềm ẩn.
 
 <h2>Câu lệnh PHP Larevel</h2>
-Câu lệnh tạo serve:<br>
+Câu lệnh tạo server:<br>
 php artisan serve<br>
 <br>
 
