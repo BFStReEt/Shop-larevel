@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*hello*/
 Route::get('admin/Login', [LoginController::class, 'index']);
