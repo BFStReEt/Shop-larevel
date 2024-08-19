@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 /*hello*/
-Route::get('admin/Login', [LoginController::class, 'index']);
+Route::get('admin/login', [LoginController::class, 'index']);
