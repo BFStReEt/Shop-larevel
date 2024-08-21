@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--edit-->
 
 <head>
-    <!--reademe not edit-->
     @include('admin.head')
 </head>
 
@@ -12,7 +10,7 @@
         <div class="login-logo">
             <a href="#"><b>Admin</b></a>
         </div>
-        <!-- /.login-logo -->
+        <!-- /.login-logo  hello-->
         <div class="card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
