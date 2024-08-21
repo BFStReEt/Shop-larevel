@@ -27,7 +27,8 @@ class LoginController extends Controller
                 'password' => $request->input('password'),
             ], $request->input('remember'))
         ) {
-            return route('admin');
+            return redirect()->route('admin');
         }
+        return redirect()->back();
     }
 }
