@@ -13,4 +13,8 @@ class LoginController extends Controller
             'title' => 'Login',
         ]);
     }
+    public function store(Request $request)
+    {
+        $this->validate([])
+    }
 }
