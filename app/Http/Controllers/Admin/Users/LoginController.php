@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth as FacadesAuth;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -30,6 +31,8 @@ class LoginController extends Controller
         ], $request->input('remember'))) {
             return redirect()->route('admin');
         }
+
+        session()->flash('error', 'Email hoặc mật khẩu không đúng');
         return redirect()->back();
     }
 }
