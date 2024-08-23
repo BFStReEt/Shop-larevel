@@ -16,7 +16,7 @@ class LoginController extends Controller
             'title' => 'Login',
         ]);
     }
-
+//fix here
 
     public function store(Request $request)
     {
