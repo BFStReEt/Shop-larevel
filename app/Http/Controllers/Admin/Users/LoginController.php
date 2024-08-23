@@ -1,5 +1,5 @@
 <?php
-//hello
+
 namespace App\Http\Controllers\Admin\Users;
 
 use App\Http\Controllers\Controller;
@@ -34,6 +34,5 @@ class LoginController extends Controller
 
         session()->flash('error', 'Email hoặc mật khẩu không đúng');
         return redirect()->back();
-        //back
     }
 }

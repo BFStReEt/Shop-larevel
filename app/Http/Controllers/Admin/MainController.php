@@ -10,6 +10,6 @@ class MainController extends Controller
     //Main
     public function index()
     {
-        echo "Admin";
+        return view("admin.view");
     }
 }
