@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\MainController;
+use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,9 +27,8 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/main', [MainController::class, 'index']);
   
         #Menu
-        Route::prefix('menu')->group(function () {
-
-
+        Route::prefix('menus')->group(function () {
+            Route::get('add', [MenuController::class,'create']);
         });
     });
 });
