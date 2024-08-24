@@ -11,7 +11,9 @@ class MainController extends Controller
     //Main
     public function index()
     {
-        return view("admin.view");
+        return view("admin.home",[
+            "title" => "Trang quản trị Admin"
+        ]);
     }
 
 
