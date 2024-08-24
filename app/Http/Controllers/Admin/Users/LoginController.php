@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Users;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Login\CreateLoginRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth as FacadesAuth;
@@ -25,7 +26,7 @@ class LoginController extends Controller
         return redirect('admin/users/login');
     }
 
-    public function store(Request $request)
+    public function store(CreateLoginRequest $request)
     {
         $this->validate($request, [
             'email' => 'required|email:filter',

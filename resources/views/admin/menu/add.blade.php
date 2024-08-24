@@ -1,7 +1,7 @@
 @extends("admin.main")
 
 @section("head")
-<script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/classic/ckeditor.js"></script>
 @endsection
 
 @section("content")
