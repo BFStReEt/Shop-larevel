@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
+            $table->string('name',length:255);
+            $table->integer('parent_id');
+            $table->text('decription');
+            $table->longText('content');
+            $table->string('slug',length:255)->unique();//link
+            $table->integer('active');
             $table->timestamps();
         });
     }
