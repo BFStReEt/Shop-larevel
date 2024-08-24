@@ -16,7 +16,14 @@ class LoginController extends Controller
             'title' => 'Login',
         ]);
     }
-//fix here
+
+    public function logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('admin/users/login');
+    }
 
     public function store(Request $request)
     {
@@ -35,5 +42,5 @@ class LoginController extends Controller
         session()->flash('error', 'Email hoặc mật khẩu không đúng');
         return redirect()->back();
     }
-
+    
 }

@@ -14,11 +14,5 @@ class MainController extends Controller
         return view("admin.view");
     }
 
-    public function logout(Request $request){
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
 
-        return redirect('admin/users/login');
-    }
 }
