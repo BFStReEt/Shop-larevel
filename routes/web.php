@@ -4,13 +4,13 @@ use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use Illuminate\Support\Facades\Route;
-
+//Hello mai 8h sang day
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/logout', [LoginController::class,'logout'])->name('logout');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 #Login
 Route::prefix('admin')->group(function () {
@@ -19,18 +19,17 @@ Route::prefix('admin')->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    
+
     Route::prefix('admin')->group(function () {
 
         #Main
-        Route::get('/', [MainController::class,'index'])->name('admin');
+        Route::get('/', [MainController::class, 'index'])->name('admin');
         Route::get('/main', [MainController::class, 'index']);
-  
+
         #Menu
         Route::prefix('menus')->group(function () {
-            Route::get('add', [MenuController::class,'create']);
-            Route::post('add', [MenuController::class,'store']);
+            Route::get('add', [MenuController::class, 'create']);
+            Route::post('add', [MenuController::class, 'store']);
         });
     });
 });
-
