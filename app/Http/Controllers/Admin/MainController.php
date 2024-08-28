@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
 {
-    //Main
+    //Main controller
     public function index()
     {
         return view("admin.home",[
