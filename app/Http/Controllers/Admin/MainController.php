@@ -12,6 +12,7 @@ class MainController extends Controller
     //hello
     //Day3
     //Day5
+    //Day6
     public function index()
     {
         return view("admin.home",[
