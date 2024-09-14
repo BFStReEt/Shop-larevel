@@ -4,7 +4,6 @@ use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use Illuminate\Support\Facades\Route;
-//Hello mai 8h sang day
 
 Route::get('/', function () {
     return view('welcome');
@@ -13,6 +12,7 @@ Route::get('/', function () {
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 #Login
+#Hello
 Route::prefix('admin')->group(function () {
     Route::get('/users/login', [LoginController::class, 'index'])->name('login');
     Route::post('/users/login/store', [LoginController::class, 'store']);
@@ -28,8 +28,8 @@ Route::middleware(['auth'])->group(function () {
 
         #Menu
         Route::prefix('menus')->group(function () {
-            Route::get('add', [MenuController::class, 'create']);
-            Route::post('add', [MenuController::class, 'store']);
+            Route::get('/add', [MenuController::class, 'create']);
+            Route::post('/add', [MenuController::class, 'store']);
         });
     });
 });
