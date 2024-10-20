@@ -17,7 +17,7 @@ Laravel tự động bảo vệ ứng dụng khỏi các cuộc tấn công CSRF
 <h2>Tại sao cần @csrf?</h2>
 Bảo mật: Giúp bảo vệ ứng dụng khỏi các cuộc tấn công CSRF.
 Dễ sử dụng: Laravel tự động xử lý việc tạo và xác thực token CSRF, giúp việc bảo vệ ứng dụng trở nên dễ dàng hơn.
-Sử dụng @csrf là một phần quan trọng để bảo vệ các form trong ứng dụng Laravel của bạn khỏi các cuộc tấn công tiềm ẩn.
+Sử dụng @csrf là một phần quan trọng để bảo vệ các form trong ứng dụng Laravel khỏi các cuộc tấn công tiềm ẩn.
 
 <h2>Câu lệnh PHP Larevel</h2>
 Câu lệnh tạo server:<br>
